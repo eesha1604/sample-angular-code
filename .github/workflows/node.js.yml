@@ -50,7 +50,7 @@ jobs:
       run: terraform init
 
     - name: Plan infrastructure changes
-      run: terraform plan
+      run: terraform plan Terraform/instance.tf
 
     - name: Apply infrastructure changes
       run: terraform apply --auto-approve
